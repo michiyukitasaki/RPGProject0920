@@ -13,8 +13,8 @@ public class SaveScript : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    private void Update()
-    {
-        Debug.Log("Name" + pname);
-    }
+    //private void Update()
+    //{
+    //    Debug.Log("Name" + pname);
+    //}
 }
