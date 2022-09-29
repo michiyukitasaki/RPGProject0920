@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6986440698326126060}
-  m_LocalRotation: {x: 0.18312263, y: -0.6829832, z: 0.18312263, w: 0.6829833}
-  m_LocalPosition: {x: 2.8063354, y: 1.4558134, z: 0.13330078}
+  m_LocalRotation: {x: 0.18312207, y: -0.6829834, z: 0.18312207, w: 0.68298346}
+  m_LocalPosition: {x: 3.5640106, y: 2.3400002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1024939163579117906}
   m_Layer: 0
   m_Name: Player1Character1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,13 +210,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1Female3
       objectReference: {fileID: 0}
+    - target: {fileID: 8569686804598978054, guid: 3d6127e303a40488c824d66c083448e6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8572816853230504140, guid: 3d6127e303a40488c824d66c083448e6, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8572816853230504140, guid: 3d6127e303a40488c824d66c083448e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.486
       objectReference: {fileID: 0}
     - target: {fileID: 8572816853230504140, guid: 3d6127e303a40488c824d66c083448e6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -305,3 +309,32 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &6089017785448410559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2366236746921008148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &3431744500351239371
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2366236746921008148}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

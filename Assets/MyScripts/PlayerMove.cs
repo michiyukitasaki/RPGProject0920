@@ -21,6 +21,8 @@ public class PlayerMove : MonoBehaviour
     private Vector3 pos;
     private Vector3 currPos;
 
+    public static bool canMove = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -44,14 +46,19 @@ public class PlayerMove : MonoBehaviour
         //視点のオフセット指定
         ct.m_FollowOffset = currPos;
 
-        if(Input.GetMouseButtonDown(0))
+        if(canMove == true)  //動ける状態なら
         {
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if(Physics.Raycast(ray, out hit))
+            if (Input.GetMouseButtonDown(0))
             {
-                nav.destination = hit.point;
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    nav.destination = hit.point;
+                }
             }
         }
+
+        
 
         //アイドル⇄スプリント
         if(velocitySpeed != 0)
