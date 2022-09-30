@@ -7,12 +7,19 @@ public class CursorOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 {
     public void OnPointerEnter(PointerEventData eventData)
     {
-        PlayerMove.canMove = false;
+        if(Time.timeScale == 1)
+        {
+            PlayerMove.canMove = false;
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        PlayerMove.canMove = true;
+        if(Time.timeScale == 1)
+        {
+            PlayerMove.canMove = true;
+        }
+        
     }
 
     
